@@ -48,31 +48,31 @@ let Stack = (function(){
       items.set(this, [])
     }
     push(element){
-      let s = items.get(this)
-      s.push(element)
+      let q = items.get(this)
+      q.push(element)
     }
     pop(){
-      let s = items.get(this)
-      return s.pop();
+      let q = items.get(this)
+      return q.pop();
     }
     peek(){
-      let s = items.get(this)
-      return s[s.length-1]
+      let q = items.get(this)
+      return q[s.length-1]
     }
     isEmpty(){
-      let s = items.get(this)
-      return s.length === 0;
+      let q = items.get(this)
+      return q.length === 0;
     }
     clear(){
       items.set(this, [])
     }
     print(){
-      let s = items.get(this)
-      console.log(s.toString())
+      let q = items.get(this)
+      console.log(q.toString())
     }
     size(){
-      let s = items.get(this)
-      return s.length;
+      let q = items.get(this)
+      return q.length;
     }
   }
   return Stack;
